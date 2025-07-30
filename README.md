@@ -1,7 +1,7 @@
 
 1. Installation:
-  - `conda create -n benchmark-vfm-ss python=3.10`
-  - `conda activate benchmark-vfm-ss`
+  - `conda create -n vfm python=3.10`
+  - `conda activate vfm`
   - `pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu124`
 
 2. Setup: There are scripts for training linear head and full-finetuning with a mask decoder on ADE20K. To run them, first you need to update the `root` folder according to your folder structure. `root` folder should include the ADE20K/PASCAL zip folder. You can use these commands to get them:
@@ -16,4 +16,6 @@
 
 4. Model logs everything to Wandb by default, you can update the settings in the scripts. Please put your Wandb API key in the `~/.wandb_key` file. 
 
-5. Now, you should be able to run the scripts without any problem.
+5. You also need to change the conda environment in the script. Currently, it is `/scratch/work/saritak1/conda/miniconda3/envs/vfm`.
+
+6. Now, you should be able to run the scripts without any problem.
