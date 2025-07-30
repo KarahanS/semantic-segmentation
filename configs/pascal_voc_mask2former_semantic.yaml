@@ -1,5 +1,5 @@
 trainer:
-  max_steps: 40000
+  max_steps: 20000
   val_check_interval: 1000
   check_val_every_n_epoch: ~
   logger:
